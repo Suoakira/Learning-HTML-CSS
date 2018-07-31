@@ -3,24 +3,83 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="ss.css">
 		<title>Survey Form</title>
-
 	</head>
-		<h1 id="title">Survey</h1>
-		<div id="form-outer">
-			<p id="description">
-				We will now outline some pretend questions!
-			</p>
-
-			<div class="labels">
-				<label id="name-label" for="name">First Name: </label>
-					<form id="survey-form" method="GET">
-						<div class="rightTab">
-							<input autofocus type="text" name="name" id="name" class="inputfield" placeholder="Please type your name"required>
-						</div>
-
-					</form>
-			</div>
-		</div>
 	<body>
+
+		<div id="form-outer">
+			<h1> This is all about Crypto!</h1>
+			<p id="description">
+				Which cryptocurrencies are heading to the moon? Please fill in your details below!
+			</p>
+			<br>
+			<form id="survey-form" method="GET">
+				<div class="labels">
+					<label id="name-label" for="name">Name :</label>
+				</div>
+				<div class="righttab">
+					<input autofocus type="text" name="name" id="name" class="inputfield" placeholder="Please Enter Your name here!" required>
+				</div>
+
+				<div class="labels">
+					<label id="email-label" for="email">Email :</label>
+				</div>
+				<div class="righttab">
+					<input type="email" id="email" class="inputfield" required placeholder="Please Enter Your Email">
+				</div>
+
+				<div class="labels">
+					<label id="number-label" for="age">Age :</label>
+				</div>
+				<div class="righttab">
+					<input type="number" name="age" id="age" class="inputfield" required placeholder="Age">
+					<!-- somthing is wrong here with the tags?-->
+				</div>
+
+				<div class="labels">
+					<label for="dropdown">What is your favourite Crypto Currency?</label>
+				</div>
+				<div class="righttab">
+					<select id="dropdown" name="favcrypto" class="dropdown">
+				<option disabled value>Please select one</option>
+				<option value="BTC">Bitcoin</option>
+				<option value="ETH">Ethereum </option>
+				<option value="SDS">Alchemint</option>
+				<option value="other">Other Crypto</option>
+
+			</select>
+		</div>
+
+
+				<div class="labels">
+					<label id="strat-label" for="strat"> What is your main Crypto trading strategie?</label>
+				</div>
+				<div class="righttab">
+					<ul style="list-style: none">
+						<li class="radio"><label>Hodl<input name="radio-buttons" value="1" type="radio" class="userRatings"></label></li>"
+						<li class="radio"><label>Trade<input name="radio-buttons" value="2" type="radio" class="userRatings"></label></li>"
+						<li class="radio"><label>Buy High Sell Low<input name="radio-buttons" value="3" type="radio" class="userRatings"></label></li>"
+					</ul>
+				</div>
+				<div class="labels">
+					<label id="allocation" for="nex">What will be your allocation for the NEX ICO?</label>
+				</div>
+				<dive class="righttab">
+					<select id="nex" name="nexico" class="dropdown">
+						<option disabled value>Please select one of the following</option>
+						<option value="10k">10,000</option>
+						<option value="10k">10,000</option>
+						<option value="10k">10,000</option>
+						<option value="10k">yep you gonna get that 10,000 allocation!</option>
+					</select>
+				</div>
+
+
+
+
+			
+
+
+			</form>
+		</div>
 	</body>
 </html>
